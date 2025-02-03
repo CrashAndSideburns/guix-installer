@@ -27,6 +27,7 @@
   #:use-module (gnu packages vim)
   #:use-module (gnu packages curl)
   #:use-module (gnu packages emacs)
+  #:use-module (gnu packages zfs)
   #:use-module (gnu packages linux)
   #:use-module (gnu packages mtools)
   #:use-module (gnu packages package-management)
@@ -89,7 +90,7 @@
 
     ;; Add some extra packages useful for the installation process
     (packages
-     (append (list git curl stow vim emacs-no-x-toolkit)
+     (append (list git curl zfs stow vim emacs-no-x-toolkit)
              (operating-system-packages installation-os)))))
 
 installation-os-nonfree
